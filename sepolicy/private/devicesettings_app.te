@@ -1,7 +1,0 @@
-type devicesettings_app, domain;
-typeattribute devicesettings_app mlstrustedsubject;
-
-app_domain(devicesettings_app)
-
-# Allow XiaomiParts to read/write to sysfs_htsr;
-allow devicesettings_app sysfs_htsr:file rw_file_perms;

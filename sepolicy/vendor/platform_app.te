@@ -1,3 +1,6 @@
 # Dolby
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 binder_call(platform_app, hal_dms_default)
+
+# High Touch Polling Rate
+allow platform_app sysfs_htsr:file rw_file_perms;
